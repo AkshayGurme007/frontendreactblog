@@ -3,7 +3,7 @@ import { Data } from "./Api";
 import "./style.css";
 
 const Bollywood = () => {
-  const [bollywood, setBollywood] = useContext(Data);
+  const [bollywood] = useContext(Data);
   return (
     <>
       <h2 className="bolly">Bollywood</h2>
@@ -13,7 +13,7 @@ const Bollywood = () => {
         <div className="main-card" key={data.id}>
           <div className="cards">
             <div>
-              <img className="card-1" src={data.ImageAsset} alt="BollyImg" />
+              <img className="card-1" src={data.ImageAsset} alt="Img" />
             </div>
             <div className="card-2">
               <div>

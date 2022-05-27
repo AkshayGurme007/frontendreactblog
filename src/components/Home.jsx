@@ -4,9 +4,9 @@ import { Data5 } from "./Latestapi";
 import { Data6 } from "./Topapi";
 import { Data7 } from "./Articalapi";
 const Home = () => {
-  const [Home, setHome] = useContext(Data5);
-  const [topapi, setTopapi] = useContext(Data6);
-  const [artical, setartical] = useContext(Data7);
+  const [Home] = useContext(Data5);
+  const [topapi] = useContext(Data6);
+  const [artical] = useContext(Data7);
   return (
     <div>
       <h1 className="home">Home</h1>
@@ -18,18 +18,21 @@ const Home = () => {
             <img
               className="card-11"
               src="https://res.cloudinary.com/dlawbbgbn/image/upload/v1653568304/india-national-tourism-day_kbblda.jpg"
+              alt="img"
             />
           </div>
           <div>
             <img
               className="card-12"
               src="https://res.cloudinary.com/dlawbbgbn/image/upload/v1653508958/What_is_Information_Technology_r0i5ji.webp"
+              alt="img"
             />
             <br />
             <br />
             <img
               className="card-12"
               src="https://res.cloudinary.com/dlawbbgbn/image/upload/v1653553370/images_3_umvvlm.jpg"
+              alt="img"
             />
           </div>
         </div>
@@ -38,7 +41,7 @@ const Home = () => {
       <div className="card-31">
         {Home.map((data) => (
           <div>
-            <img className="card-16" src={data.ImageAsset} alt="BollyImg" />
+            <img className="card-16" src={data.ImageAsset} alt="Img" />
             <h4 style={{ marginLeft: "1rem" }}>{data.Title}</h4>
             <p style={{ marginLeft: "0.5rem" }}>{data.BlogContent}</p>
             <p style={{ marginLeft: "0.5rem" }}>

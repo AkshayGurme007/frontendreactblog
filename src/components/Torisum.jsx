@@ -3,7 +3,7 @@ import { Data4 } from "./Torapi";
 import "./style.css";
 
 const Torisum = () => {
-  const [torisum, setTorisum] = useContext(Data4);
+  const [torisum] = useContext(Data4);
   return (
     <>
       <h2 className="tori">Torisum</h2>
@@ -38,11 +38,7 @@ const Torisum = () => {
 
           <div className="top-most">
             <div>
-              <img
-                className="right-card"
-                src={data.ImageAsset}
-                alt="BollyImg"
-              />
+              <img className="right-card" src={data.ImageAsset} alt="Img" />
               <div>
                 <h3 className="title2">{data.Title}</h3>
               </div>

@@ -3,7 +3,7 @@ import { Data2 } from "./Fapi";
 import "./style.css";
 
 const Fitness = () => {
-  const [fitness, setFitness] = useContext(Data2);
+  const [fitness] = useContext(Data2);
   return (
     <>
       <h2 className="fit">Fitness</h2>
@@ -38,11 +38,7 @@ const Fitness = () => {
 
           <div className="top-most">
             <div>
-              <img
-                className="right-card"
-                src={data.ImageAsset}
-                alt="BollyImg"
-              />
+              <img className="right-card" src={data.ImageAsset} alt="Img" />
               <div>
                 <h3 className="title2">{data.Title}</h3>
               </div>

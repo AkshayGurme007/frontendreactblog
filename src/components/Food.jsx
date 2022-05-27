@@ -3,7 +3,7 @@ import { data3 } from "./Fooapi";
 import "./style.css";
 
 const Food = () => {
-  const [food, setFood] = useContext(data3);
+  const [food] = useContext(data3);
   return (
     <>
       <h2 className="foo">Food</h2>
@@ -38,11 +38,7 @@ const Food = () => {
 
           <div className="top-most">
             <div>
-              <img
-                className="right-card"
-                src={data.ImageAsset}
-                alt="BollyImg"
-              />
+              <img className="right-card" src={data.ImageAsset} alt="Img" />
               <div>
                 <h3 className="title2">{data.Title}</h3>
               </div>
